@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe8ee">
+  <link rel="icon" type="image/svg+xml" href="heart.svg">
+  <meta name="description" content="Маленький мир, который я создал для нас двоих ❤️">
+  <title>Наша вселенная ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-hearts" aria-hidden="true"></div>
+
+  <main>
+    <!-- ПЕРВЫЙ ЭКРАН -->
+    <section class="welcome" id="welcome">
+      <div class="welcome-card">
+        <div class="tiny-label">ДЛЯ САМОГО ДОРОГОГО ЧЕЛОВЕКА</div>
+        <div class="big-heart" aria-hidden="true">♥</div>
+        <p class="eyebrow">У меня есть кое-что для тебя...</p>
+        <h1>Моя любимая,<br><span>это всё для тебя</span></h1>
+        <p class="welcome-text">Я собрал здесь маленькую частичку нашей истории.<br>Открой её, когда будешь готова ❤️</p>
+        <button class="love-button" id="openLove" type="button">
+          <span>Наша любовь</span><span class="button-heart">♥</span>
+        </button>
+        <div class="bottom-note">с любовью, только для тебя</div>
+      </div>
+      <span class="floating-heart h1">♥</span><span class="floating-heart h2">♡</span>
+      <span class="floating-heart h3">♥</span><span class="floating-heart h4">♡</span>
+    </section>
+
+    <!-- ОСНОВНАЯ ОТКРЫТКА -->
+    <section class="love-page hidden" id="lovePage">
+      <header class="topbar">
+        <a class="brand" href="#welcome">♥ наша история</a>
+        <span class="topbar-note">сделано с любовью</span>
+      </header>
+
+      <section class="valentine-card section-card">
+        <div class="date-tag">НАПОМИНАНИЕ О ТОМ КАК Я ТЕБЯ ЛЮБЛЮ</div>
+        <div class="card-heart">♥</div>
+        <p class="script"></p>
+        <h2>Ты — моя самая<br><span>любимая</span></h2>
+        <div class="ornament">♡ ───── ♥ ───── ♡</div>
+        <p class="letter">
+          Любимая, я хочу, чтобы ты всегда помнила, насколько ты дорога мне.
+          Спасибо, что ты есть в моей жизни, за твою улыбку, за наши разговоры,
+          моменты и даже за самые обычные дни, которые становятся особенными,
+          когда в них есть ты.
+          <br><br>
+          Я очень сильно тебя люблю и дорожу тобой. Хочу беречь наши отношения,
+          поддерживать тебя, радовать и быть рядом не только в счастливые,
+          но и в непростые моменты. Пусть у тебя всегда будет много поводов
+          улыбаться, пусть мечты становятся реальностью, а сердце будет спокойным
+          и счастливым.
+          <br><br>
+          Я желаю нам ещё больше тёплых воспоминаний, искренних объятий,
+          Хочется ощучить тебя в реальности, безумно жду этого момента.
+          Ты для меня очень важна. ❤️
+        </p>
+        <p class="signature">Всегда твой Ринатик <span>♥</span></p>
+
+        <div class="music-player">
+          <button id="musicButton" class="music-button" type="button" aria-label="Включить музыку">♫</button>
+          <div class="music-info">
+            <strong>'это просто фоновая мелодия ехехе'</strong>
+            <span id="musicStatus">Нажми, чтобы включить музыку</span>
+          </div>
+          <div class="equalizer" id="equalizer"><i></i><i></i><i></i><i></i><i></i></div>
+          <audio id="loveAudio" src="music/our-song.mp3" loop preload="none"></audio>
+        </div>
+        <p class="music-hint">Музыка включается по твоему нажатию 💗</p>
+      </section>
+
+      <!-- НАШИ ФОТО -->
+      <section class="content-section" id="photos">
+        <div class="section-heading">
+          <span class="section-kicker">МОЁ СЧАТЬЕ</span>
+          <h2>Моменты, которые <em>хочется хранить</em></h2>
+          <p>Каждая фотография — приносит мне улыбку</p>
+        </div>
+        <div class="photo-grid">
+          <figure class="memory-photo photo-large">
+            <img src="images/photo-1.jpg" alt="Наше совместное фото 1" loading="lazy">
+            <figcaption>Твой взгляд.. <span>♥</span></figcaption>
+          </figure>
+          <figure class="memory-photo">
+            <img src="images/photo-2.jpg" alt="Наше совместное фото 2" loading="lazy">
+            <figcaption>Безумно милая <span>♥</span></figcaption>
+          </figure>
+          <figure class="memory-photo">
+            <img src="images/photo-3.jpg" alt="Наше совместное фото 3" loading="lazy">
+            <figcaption>Моя жанымка <span>♥</span></figcaption>
+          </figure>
+          <figure class="memory-photo">
+            <img src="images/photo-4.jpg" alt="Наше совместное фото 4" loading="lazy">
+            <figcaption>Хочется скушать <span>♥</span></figcaption>
+          </figure>
+          <figure class="memory-photo photo-large">
+            <img src="images/photo-5.jpg" alt="Наше совместное фото 5" loading="lazy">
+            <figcaption>Пумпумпум <span>♥</span></figcaption>
+          </figure>
+          <figure class="memory-photo">
+            <img src="images/photo-6.jpg" alt="Наше совместное фото 6" loading="lazy">
+            <figcaption>Такая сладкая <span>♥</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- АРХИВ НАШИХ ЛЮБОВНЫХ ПОСЛАНИЙ -->
+<section class="content-section chats-section" id="chats">
+
+  <div class="section-heading">
+    <span class="section-kicker">НАША МАЛЕНЬКАЯ ИСТОРИЯ</span>
+    <h2>Слова, которые <em>хочется перечитывать</em></h2>
+    <p>Некоторые сообщения хочется сохранить навсегда. ❤️</p>
+  </div>
+
+  <div class="chat-grid">
+
+    <figure class="chat-memory">
+      <div class="chat-heart">♥</div>
+      <div class="chat-image-wrap">
+        <img src="images/chat-1.jpg"
+             alt="Наша переписка 1"
+             loading="lazy">
+      </div>
+      <figcaption>
+        <span class="chat-number">01</span>
+        <span>Наша любовь 💌</span>
+      </figcaption>
+    </figure>
+
+    <figure class="chat-memory">
+      <div class="chat-heart">♥</div>
+      <div class="chat-image-wrap">
+        <img src="images/chat-2.jpg"
+             alt="Наша переписка 2"
+             loading="lazy">
+      </div>
+      <figcaption>
+        <span class="chat-number">02</span>
+        <span>Безумно хочу этого</span>
+      </figcaption>
+    </figure>
+
+    <figure class="chat-memory">
+      <div class="chat-heart">♥</div>
+      <div class="chat-image-wrap">
+        <img src="images/chat-3.jpg"
+             alt="Наша переписка 3"
+             loading="lazy">
+      </div>
+      <figcaption>
+        <span class="chat-number">03</span>
+        <span>Наша изюминка хехехе</span>
+      </figcaption>
+    </figure>
+
+    <figure class="chat-memory">
+      <div class="chat-heart">♥</div>
+      <div class="chat-image-wrap">
+        <img src="images/chat-4.jpg"
+             alt="Наша переписка 4"
+             loading="lazy">
+      </div>
+      <figcaption>
+        <span class="chat-number">04</span>
+        <span>Романтика..</span>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+      <section class="last-note">
+        <div class="last-heart">♥</div>
+        <p class="script">И самое главное...</p>
+        <h2>Я выбираю тебя.<br><em>Снова и снова.</em></h2>
+        <p>Спасибо за то, что мы есть друг у друга.</p>
+        <div class="final-hearts">♡ ♥ ♡</div>
+      </section>
+
+      <footer>Создано с огромной любовью <span>♥</span> только для тебя</footer>
+    </section>
+  </main>
+
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фотографии">
+    <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Закрыть">×</button>
+    <img id="lightboxImage" src="" alt="Увеличенная фотография">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
